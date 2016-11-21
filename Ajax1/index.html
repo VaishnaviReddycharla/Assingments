@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>
+			Json
+		</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script>
+				$(document).ready(function(){
+				$("#get-data").click(function(){
+				console.log("hello");
+				$.getJSON('emp.js', function(data) {
+				$.each(data.employees, function(i, f) {
+				  
+				var Row = "<tr>" + "<td>" + f.firstName + "</td>" +
+				   "<td>" + f.lastName + "</td>" + "<td>" + f.experience + 
+				   "</td>" 
+				$(Row).appendTo("#userdata tbody");
+					});
+					});
+				});
+			});
+			</script>		
+	</head>
+  <body>
+   <br> <input type="button" id="get-data" value = "GetJsonData"class="btn btn-primary btn-block"><br><br>
+		<div class="container">
+		  <div class="table-responsive">
+			<table class="table table-bordered"  id = "userdata">
+				<thead>
+					<th> Firstname 	</th>
+					<th> Lastname 	</th>
+					<th> Experience </th>
+				<thead>
+				<tbody>
+				
+				</tbody>
+			</table>
+		</div>
+	</div>
+  </body>
+</html>
+				
+	
