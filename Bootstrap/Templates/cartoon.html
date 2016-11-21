@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src = "../JS/nav.js"></script>
+		<link rel = "stylesheet" href = "../CSS/style.css">
+	<script>
+	$(document).ready(function(){
+	$('.video3').on('hide.bs.modal', function(e) {    
+    var $if = $(e.delegateTarget).find('iframe');
+    var src = $if.attr("src");
+    $if.attr("src", '/empty.html');
+    $if.attr("src", src);
+});
+});
+</script>
+</head>
+<body>
+
+<div id = "nav-placeholder">
+</div>
+<div class="row">
+ <div >
+<div id="shop"  >
+<div class= "row">
+		<div class = " col-md-4 col-sm-6">
+			<div class="content" >
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3x8aCwNRAIQ"   ></iframe>
+				<button type="button" data-toggle="modal" data-target="#video1">
+			</div>
+		</div>
+		<div class = " col-md-4 col-sm-6">
+			<div class="content" >
+			 <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/grtchH6SfGE"   ></iframe>
+				<button type="button" data-toggle="modal" data-target="#video2">
+			</div>
+		</div>
+		<div class = " col-md-4 col-sm-6">
+			<div class="content">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0_C2HJvtRDY"  ></iframe>
+					<button type="button" id="#myModal" data-toggle="modal" data-target="#video3">
+			</div>
+		</div>
+			<div class = " col-md-4 col-sm-6">
+				<div class="content">
+				  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W6VM2wPi8DY" ></iframe>
+					<button type="button"  data-toggle="modal" data-target="#video4">
+				</div>
+			</div>
+		</div>
+					<div class="modal fade" id="video1" role="dialog">
+				<div class="modal-dialog" >
+				  <!-- Modal content-->
+				   <div class="modal-content" style="height:500px">
+						<!--Youtube video with autoplay after opening the modal-->
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/3x8aCwNRAIQ" allowfullscreen>
+						</iframe>
+						<div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+				  </div>
+				</div>
+			</div> 
+			 <div class="modal fade" id="video2" role="dialog">
+				<div class="modal-dialog" >
+				
+				  <!-- Modal content-->
+				  <div class="modal-content" style="height:500px">
+						<!--Youtube video with autoplay after opening the modal-->
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/grtchH6SfG" allowfullscreen>
+						</iframe>
+				
+				  </div>
+				  
+				</div>
+			</div> 
+			 <div class="modal fade" id="video3" role="dialog">
+				<div class="modal-dialog" >
+				
+				  <!-- Modal content-->
+				  <div class="modal-content" style="height:500px" class="videoModal">
+						<!--Youtube video with autoplay after opening the modal-->
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/0_C2HJvtRDY" allowfullscreen>
+						</iframe>
+				
+				  </div>
+				  
+				</div>
+			</div> 
+			 <div class="modal fade" id="video4" role="dialog">
+				<div class="modal-dialog" >
+				
+				  <!-- Modal content-->
+				  <div class="modal-content" style="height:500px">
+						<!--Youtube video with autoplay after opening the modal-->
+						<iframe width="100%" height="100%"src="https://www.youtube.com/embed/W6VM2wPi8DY" allowfullscreen>
+						</iframe>
+				
+				  </div>
+				  
+				</div>
+			</div> 
+  </div>
+  </div>
