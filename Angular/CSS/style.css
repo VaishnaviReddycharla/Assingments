@@ -1,0 +1,14 @@
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+	margin-top: 150px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
