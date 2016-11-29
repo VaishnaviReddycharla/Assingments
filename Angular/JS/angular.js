@@ -1,5 +1,5 @@
 var app = angular.module("myApp" , [])
-app.controller("Cntrl" , function($scope){
+app.controller("DemoCntrl" , function($scope){
 	console.log("hello");
 	$scope.message = "Hello";
 });
