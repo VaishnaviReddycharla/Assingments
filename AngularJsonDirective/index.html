@@ -1,0 +1,28 @@
+<html>
+	<head>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src = "JS/angular.min.js"></script>
+		<script src = "JS/jsonApp.js"></script>
+	</head>
+
+	<body ng-app = "myApp">
+
+		<div ng-controller = "jsonEmpCtrl">
+			<input type = "button" value = "GETDATA"  class="btn btn-primary btn-block"  style = "margin-top:10px">
+			<emp-directive json="data" delete="delFunct()"></emp-directive>
+		</div>
+
+
+
+		<div ng-controller = "jsonSalCtrl">
+			<input type = "button" value = "GETDATA"  class="btn btn-primary btn-block" style = "margin-top:10px">
+			<emp-directive json="data" delete="delFunct()"></emp-directive>
+		</div>
+
+
+	</body>
+	
+
+</html>
