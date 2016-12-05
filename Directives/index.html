@@ -1,0 +1,29 @@
+<html>
+	<head>
+	  	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<script src = "JS/angular.min.js"></script>
+		<script src = "JS/angular-ui-router.min.js"></script>
+		<script src = "JS/Directives_controller.js"></script>
+		<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+	</head>
+
+	<body ng-app = "myApp">
+		<div ng-controller = "MainCntrl">
+	
+		<button   class="btn btn-success btn-lg" ng-click = "getJsonFunct()" a ui-sref="home">GET</button>
+		
+		
+		<div >
+		    <div ui-view></div>
+		</div>
+			<!--<my-directive></my-directive>-->
+
+		</div>
+			<!--<div ng-controller = "Main1Cntrl1">
+			<input type="button" value = "get" ng-click = "data=true">
+			<div ng-show="data">
+		</div>
+	</div>-->
+	</body>
+
+</html>

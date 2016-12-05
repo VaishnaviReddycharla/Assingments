@@ -1,0 +1,19 @@
+<table class="tableclass">
+	<thead >
+		<th>EmpName</th>
+		<th>EmpID</th>
+		<th>EmpExp</th>
+	</thead>
+
+	<tbody class="tablebody">
+		<tr ng-repeat = "emp in data1.employees">
+			<td>{{emp.firstName}}</td>
+			<td>{{emp.lastName}}</td>
+			<td>{{emp.experience}}</td>
+			<td><button  class="btn btn-success btn-lg" ng-click="fullDetailsFunct(emp.firstName,emp.lastName,emp.experience)" a ui-sref=".details" >FULL DETAILS</button></td>
+		</tr>
+	</tbody>
+
+
+</table>
+<div ui-view></div>
