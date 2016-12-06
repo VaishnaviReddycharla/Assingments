@@ -1,0 +1,5 @@
+{"food":[
+    {"state":"North", "menu":[{"item1":"dalMakhani"},{"item2":"chole"}] ,  "image":"Images/north.jpg" },
+    {"state":"South",  "menu":[{"item1":"dal"},{"item2":"cole"}]  ,"image":"Images/south.jpg"},
+    {"state":"West",  "menu":[{"item1":"dajhlMakhani"},{"item2":"chojle"}],   "image":"Images/north.jpg"}
+]}
