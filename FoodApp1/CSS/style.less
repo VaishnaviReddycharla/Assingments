@@ -1,0 +1,44 @@
+@images: "../Images";
+@fontcolor : black;
+@color:	#E6E6FA;
+@backgroundtransparent:transparent;
+@fontstyle:italic;
+@navborder:transparent;
+@fontweight:bold;
+
+body {
+  background: url("@{images}/image1.jpg") no-repeat;
+  width:100%;
+}
+
+.navbar {
+   background-color: @backgroundtransparent;
+   border-color:@navborder;
+   font-style:@fontstyle;
+   font-weight: @fontweight;
+   color:black;
+}
+
+.navclass{
+color:@fontcolor
+}
+
+.panel{
+background-color:@color;
+}
+
+.titleclass{
+text-align :center;
+font-style:italic;
+font-size:80px;
+}
+.about{
+		width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+		background-color:@color;
+}
+.about1{
+.about
+}
+

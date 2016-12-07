@@ -1,0 +1,5 @@
+{"food":[
+    {"state":"North", "menu":[{"item1":"DalMakhani"},{"item2":"Chole"},{"item3":"Paneer"},{"item4":"Korma"}] ,  "image":"Images/north.jpg", "gallery":[{"image":"Images/north.jpg"},{"image1":"Images/image.jpg"},{"image2":"Images/image1.jpg"}]},
+    {"state":"South",  "menu":[{"item1":"Idli"},{"item2":"Dosa"},{"item3":"Vada"},{"item4":" Dil Khushal"}]  ,"image":"Images/south.jpg" ,"gallery":[{"image":"Images/south.jpg"},{"image1":"Images/image3.jpg"},{"image2":"Images/image1.jpg"}]},
+    {"state":"West",  "menu":[{"item1":"Dal Bati Churma"},{"item2":" Gatte ki Khichdi"},{"item3":" Dil Khushal"},{"item4":" Rajasthani Kadi"}],"image":"Images/west.jpg" ,"gallery":[{"image":"Images/west.jpg"},{"image1":"Images/image3.jpg"},{"image2":"Images/image1.jpg"}]}
+]}

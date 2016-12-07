@@ -1,0 +1,36 @@
+
+
+    <div class="container-fluid" >
+    <div class="col-md-6 col-xs-6 col-sm-6">
+        <div  ng-repeat = "food in data1.food ">
+            <div class="col-md-10">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img ng-src="{{food.image}}" class="img-responsive">
+                            </div>
+                        
+                            
+
+                            <div class="col-md-8">
+                                <h6>{{food.state}}</h6>
+                                <button class="btn btn-primary btn-xs"  ng-click="getmenu(food.state,food.menu)" a  ui-sref=".menu"> MENU</button>
+                                <button class="btn btn-success btn-xs" ng-click="getgallery(food.state,food.gallery)" a  ui-sref=".gallery"> GALLERY</button>
+                            </div>
+        
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    <div ui-view></div>
+    </div> 
+
+        
+    
+
+       
