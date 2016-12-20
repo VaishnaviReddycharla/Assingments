@@ -1,0 +1,16 @@
+@color:powderblue;
+@fontcolor:yellow;
+
+
+.emptable{
+	border:30px;
+	background-color:@color;
+	color:@fontcolor;
+	margin-top:30px;
+	padding:20px;
+}
+
+.foodtable{
+&:extend(.emptable);
+color:red;	
+}
