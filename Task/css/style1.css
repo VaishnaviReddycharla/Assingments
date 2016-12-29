@@ -1,0 +1,184 @@
+.header{
+    height: 186px;
+  	background-color: #DCE3EB;
+  	opacity: 0.8;
+}
+		
+body{
+	background: url(../images/background.png) no-repeat;
+
+	margin:0;
+}
+.nopadding{
+	padding:0;
+}
+
+.firstlogo{
+	margin:27px 0px 45px 255px;
+	height: 135px;
+	width: 215px;
+}
+.title{
+color: #556B2F;
+font-size: 25px;
+margin:35px 20px 0px 67px;
+padding:0;
+}
+.title2{
+	font-size: 20px;
+	margin-left: 64px;
+	margin-top:20px;
+	margin-bottom:53px;	
+}
+.loginForm{
+	background-color: white;
+	margin: 79px 291px 187px 0px;
+	width: 820px;
+	height:450px;
+	opacity: 0.9;
+}
+.container-fluid{
+padding:0 !important;
+margin:0 !important;
+width:100%;
+}
+.row{
+	margin:0;
+}
+.loginHeader{
+	background-color: #84B84C;
+	height: 83px;
+}
+
+.farmerLogo{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 80px;
+	height: 60px;
+}
+
+i{
+  left: 430px;
+  margin-top: 35px;
+  color: #84B84C;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  border: 2px solid white;
+}
+
+.inputs{
+	margin: 47px 129px 35px 135px;
+}
+
+.inputbox{
+	margin-left: 50px;
+	width: 412px;
+	height: 45px
+}
+.password{
+	margin-top: 17px;
+	margin-left: 56px;
+	width: 412px;
+	height: 45px
+}
+.loginBttn{
+margin: 0px 425px 35px 263px;
+}
+
+.btn{
+	border-radius: 0;
+	width:117px;
+	height: 51px;
+
+}
+
+.forgot{
+	margin-left: 262px;
+	margin-right: 279px;
+}
+h3{
+	color:white;
+	margin-top: 34px;
+	margin-bottom: 30px;
+	margin-left:25px;
+}
+.footer{
+	height: 100px;
+	background-color: #4A4A4A;
+	padding:0px;
+}
+
+.footerText{
+	text-align:center;
+	margin-top: 55px;
+	color:white;
+	margin-left: 615px; 
+
+	margin-right: 500px;
+	margin-bottom: 33px;
+}
+.row1{
+	padding:0;
+
+}
+.header1{
+	height: 326px;
+  	background-color: #DCE3EB;
+  	opacity: 0.8;
+}
+.logo{ 
+ 	margin-left: 175px;
+ 	background-size: cover;
+ 	height: 135px;
+ 	width: 215px;
+ 	margin-top: 88px;
+ 	margin-bottom: 38px;
+ 	margin-right:69px;
+}
+.row-form{
+	margin: 140px 100px 200px 100px;
+}
+.well1{
+	height: 250px;
+	width: 220px;
+	border-radius: 0px !important;
+	border:none !important;
+	background-color: #85B94D;
+}
+
+.well{
+	height: 250px;
+	width: 220px;
+	border-radius: 0px !important;
+	border:none !important;
+}
+
+.cards{
+	height: 90px;
+ 	width: 110px;
+    margin: 35px 55px 0px 35px;
+    
+}
+
+p{
+ display: inline-block;
+}
+
+strong{
+	font-size: 15px;
+}
+
+.caption{
+	display: block;
+	margin-left: 58px;
+	margin-top: 47px;
+	font-size: 20px;
+}
+
+.caption1{
+	display: block;
+	margin-left: 40px;
+	margin-top: 47px;
+	font-size: 20px;
+}
