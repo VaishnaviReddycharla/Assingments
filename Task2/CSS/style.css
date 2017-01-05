@@ -1,0 +1,23 @@
+.selectpicker{
+	  	width:100px;
+	  }
+	  .class2{
+	  	margin-left:200px;
+	  	top:-50px;
+
+	  
+	  }
+	  .class1{
+	  	margin-left:20px;
+	  	top:-50px;
+	  	margin-right: 40px;
+
+	  
+	  }
+	  .form-group.required .control-label:after {
+  content:"*";
+  color:red;
+}
+.textarea.form-control{
+	height: 56px;
+}
