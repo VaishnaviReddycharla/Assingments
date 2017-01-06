@@ -1,0 +1,35 @@
+<div>
+<table class=" tableclass">
+	<thead class="header">
+	  <tr>
+		<th></th>
+		<th>Frequency Type</th>
+		<th>Start Date</th>
+		<th>End Date</th>
+		<th>Total cash with Tax </th>
+		<th>Actions</th>
+	  </tr>
+	</thead>
+
+	<tbody ng-repeat="x in totaldetails" >
+	<tr data-toggle="collapse" data-target="#accordion" class="clickable">
+	    <td>{{frequencydata}}</td>
+	</tr>
+	<tr>
+	    <td colspan="3">
+	        <div id="accordion" class="collapse">{{payment}}</div>
+	    </td>
+	</tr>
+	</tbody>
+</table>
+
+<button type="button" class="btn btn-success btn1" data-toggle="modal" data-target="#myModal">+ADD</button>
+
+</div>
+<div>
+<modal></modal>
+<modal2></modal2>
+</div>
+
+
+
