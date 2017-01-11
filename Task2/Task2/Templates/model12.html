@@ -1,0 +1,96 @@
+<div class="modal fade" id="myModal2" role="dialog">
+<div class="modal-dialog">  
+ 
+    <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" 
+          		  class="close" 
+          		  data-dismiss="modal">&times;
+          </button>
+          <h4 class="modal-title">Payment Parameters</h4>
+        </div>
+        <div class="modal-body">
+	        <div class = "container">
+	          	<form class="form-inline">
+					<div class="form-group required">
+			     		<label>Growth Type</label><br>
+			      		<select class="form-control " 
+			      				required="required" 
+			      				ng-model="selected" 
+			      				ng-options="item for item in GrowthTypeData" 
+			      				ng-change="growthType(selected)">
+			      		<option value="">select</option>
+   						</select>
+			    	</div>
+			    	<div class="form-group required">
+			     		<label>Fixed Growth</label><br>
+			      		 <input type="text" class="form-control" placeholder="0">
+					</div>
+	          	</form>
+	          	<form class="form-inline">
+	          		<div class="form-group required">
+			     		<label class="control-label">Number of Schedules</label><br>
+			      		 <input type="text" class="form-control" placeholder="0">
+					</div>
+					<div class="form-group">
+			     		<label>Adjust Every(x)Months</label><br>
+			      		 <input type="text" class="form-control" placeholder="0">
+					</div>
+	          	</form>
+	          	<form class="form-inline">
+    
+	                <div class="form-group required">
+	                  	<label class="control-label">Charge Amount Basis<span class="label">&#42;</span></label><br>
+			      		<select class="form-control " 
+			      				required="required" 
+			      				ng-model="charge_amount_basis" 
+			      				ng-options="item for item in ChargeAmountBasis" 
+			      				ng-change="chargeAmountBasis(charge_amount_basis)">
+			      			<option value="">select</option>
+   						</select> 
+	                </div>
+	              
+	              <div class="form-group required" style="margin-left: 14px;">
+		                <h5><b>Contract Rentable</b></h5>
+		                <input type="text" 
+		                       class="form-control" style="height: 35px;width: 100px;" 
+		                       placeholder="0" 
+		                       ng-model="contract_rentable" 
+		                       ng-change="contractRentable(contract_rentable)">
+		                <span> square-feet</span>
+	              </div>
+	              
+	              <div class="form-group required">
+	                <h5><b>Amount Per Basis</b></h5>
+	                <input type="text" class="form-control" style="height: 35px;width:150px;" placeholder="0">
+	              </div>
+
+	            </form>
+
+
+		    </div>
+        </div>
+        <div class="modal-footer">
+        	<form class="form-inline form1">
+				<div class="form-group required">
+		     		<span class="fa fa-info-circle footer" ></span><br>Information
+		    	</div>
+		    	<div class="form-group required">
+		     		<span class="fa fa-calendar-o footer"></span><br>
+    				Parameters
+		    	</div>
+          	</form>
+            <a ui-sref="modal"><button type="button"  
+            						   class="add btn btn-default" 
+            						   data-toggle="modal" 
+            						   data-target="#myModal" 
+            						   ng-click="validate1()">
+            						   <i class="fa fa-angle-left"></i>
+            					</button>
+            </a>
+          	<button type="button" class="btn btn-default"  data-dismiss="modal" ng-click="savedata()">Generate</button>
+          
+        </div>
+    </div> 
+</div>
+</div>  

@@ -1,0 +1,74 @@
+
+	  <div class="modal fade" id="myModal2" role="dialog">
+	    <div class="modal-dialog">  
+	     
+		    <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">Payment Parameters</h4>
+		        </div>
+		        <div class="modal-body">
+			        <div class = "container">
+			          	<form class="form-inline">
+							<div class="form-group">
+					     		<label>Growth Type</label><br>
+					      		<select class="form-control " required="required" ng-model="selected" ng-options="item.value as item.value for item in GrowthTypeData" ng-change="growthType(selected)">
+					      		<option value="">select</option>
+	       						</select>
+					    	</div>
+					    	<div class="form-group">
+					     		<label>Fixed Growth</label><br>
+					      		 <input type="text" class="form-control" value="0">
+							</div>
+			          	</form>
+			          	<form class="form-inline">
+			          		<div class="form-group">
+					     		<label>Number of Schedules</label><br>
+					      		 <input type="text" class="form-control" value="0">
+							</div>
+							<div class="form-group">
+					     		<label>Adjust Every(x) Months</label><br>
+					      		 <input type="text" class="form-control" value="0">
+							</div>
+			          	</form>
+			          	<form class="form-inline">
+            
+			                <div class="form-group">
+			                  	<label>Charge Amount Basis<span class="label">&#42;</span></label><br>
+					      		<select class="form-control " required="required" ng-model="selected" ng-options="item.value as item.value for item in ChargeAmountBasis" ng-change="chargeAmountBasis(selected)">
+					      			<option value="">select</option>
+	       						</select> 
+			                </div>
+			              
+			              <div class="form-group" style="margin-left: 14px;">
+			                <h5><b>Contract Rentable</b></h5>
+			                <input type="text" class="form-control" style="height: 35px;width: 100px;" placeholder="0"><span> square-feet</span>
+			              </div>
+			              
+			              <div class="form-group">
+			                <h5><b>Amount Per Basis</b></h5>
+			                <input type="text" class="form-control" style="height: 35px;width:150px;" placeholder="0">
+			              </div>
+
+			            </form>
+
+
+				    </div>
+		        </div>
+		        <div class="modal-footer">
+		        	<form class="form-inline" style = "float:left">
+						<div class="form-group">
+				     		<span class="fa fa-info-circle" style = "float:left;text-align:center;"></span><br>Information
+				    	</div>
+				    	<div class="form-group">
+				     		<span class="fa fa-calendar-o" style="float:left; text-align:center;"></span><br>
+	        				Parameters
+				    	</div>
+		          	</form>
+		          	<span class="fa fa-toggle-left icon" ui-sref="page1.modal1"></span>
+		          	<button type="button" class="btn btn-default"  ui-sref="page1">Generate</button>
+		        </div>
+		    </div> 
+	    </div>
+	</div>  
+		

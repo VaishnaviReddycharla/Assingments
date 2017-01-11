@@ -1,0 +1,48 @@
+<div>
+ 	<table class="tableclass">
+	    <thead  class="header">
+	      <tr>
+	        <td style="width: 30px;"></td>
+	        <td>Frequency Type</td>
+	        <td>Start Date</td>
+	        <td>End Date</td>
+	        <td>Total cash with Tax</td>
+	        <td>Actions</td>
+	      </tr>  
+	    </thead>
+        <tbody>
+          <tr ng-repeat-start="x in totaldetails track by $index">
+            <td>{{x.Payment}}</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <span ng-if="x.expanded" ng-click="x.expanded = false" class="glyphicon glyphicon-chevron-down"></span>
+              <span ng-if="!x.expanded" ng-click="x.expanded = true" class="glyphicon glyphicon-chevron-right"></span>
+            </td>
+          </tr>
+          <tr ng-if="x.expanded" ng-repeat-end="">
+          	<td	class="glyphicon glyphicon-hourglass"></td>
+            <td>{{x.frequency}}</td>
+            <td>{{x.date}}</td>
+            <td></td>
+            <td>{{x.accounting_type}}</td>
+            <td class="	glyphicon glyphicon-pencil"  data-toggle="modal" data-target="#myModal" ng-click="edit(x);editData=!editData"></td>
+            <td class="	glyphicon glyphicon-remove" data-toggle="modal" data-target="#myModal3"></td>
+          </tr>
+        </tbody>
+	</table>
+
+	<button type="button" class="btn btn-success btn1" data-toggle="modal" data-target="#myModal">+ADD</button>
+
+</div>
+
+<div>
+	<modal></modal>
+	<modal2></modal2>
+	<modal-del></modal-del>
+</div>
+
+
+

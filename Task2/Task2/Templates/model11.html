@@ -1,0 +1,157 @@
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Payment Information</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-inline">
+              <div class="form-group required">
+                <label class="control-label">Payment Type</label><br>
+                  <select class="form-control" 
+                          required="required"
+                          ng-model="payment_type" 
+                          ng-options = "item for item in paymentarray " 
+                          ng-change="paymentType(payment_type)">
+                      <option value="">select</option>
+                  </select>
+                  
+              </div>
+              <div class="form-group required">
+                <label class="control-label">Accounting type</label><br>
+                   <select class="form-control " 
+                           required="required" 
+                           ng-model="accounting_type" 
+                           ng-options="item for item in accountData" 
+                           ng-change = "accounting(accounting_type)">
+                      <option value="">select</option>
+                    </select>
+              </div>
+        </form>
+        <form class="form-inline">
+              <div class="form-group required">
+                <label class="control-label">Frequency</label><br>
+                    <select  class="selectpicker form-control" 
+                             required="required" 
+                             ng-model="frequency" 
+                             ng-options="item for item in frequencyarray"  
+                             ng-change = "frequency(frequency)">
+                      <option value="">select</option>
+                    </select>
+              </div>
+
+              <div class="form-group required">
+                  <label class="control-label">Period Start Date<span class="label">&#42;</span></label><br>
+                    <div class="input-group date" data-provide="datepicker">
+                      <input type="text" 
+                             ng-model="startPeriod" 
+                             class="form-control" 
+                             placeholder="mm/dd/yy"
+                             ng-change="date(startPeriod)">
+
+                        <div class="input-group-addon">
+                          <span class="fa fa-calendar-o"></span>
+                        </div>
+                    </div>
+              </div>
+
+              <div class="form-group required">
+                <label class="control-label">Payment Timing</label><br>
+                  <select class="selectpicker form-control " 
+                          required="required" 
+                          ng-model="payment_timing" 
+                          ng-options="item for item in data" ng-change = "paymentTiming(payment_timing)">
+                      <option value="">select</option>
+                  </select>
+              </div>
+          </form>
+
+          <form class="form-inline">
+             <div class="form-group required">
+                <label class="control-label">payment due on</label><br>
+                   <select class="selectpicker form-control " 
+                           required="required" 
+                           ng-model="payment_due_on" 
+                           ng-options="item for item in paymentDuedata" 
+                           ng-change = "paymentDueOn(payment_due_on)">
+                       <option value="">select</option>
+                   </select>
+              </div>
+
+              <div class="form-group required">
+                <label class="control-label">payment due day</label><br>
+                   <select class="selectpicker form-control " 
+                           required="required" 
+                           ng-model="payment_due_day" 
+                           ng-options="item for item in paymentDueDay" 
+                           ng-change = "paymentDueDay(payment_due_day)">
+                      <option value="">select</option>
+                   </select>
+              </div>
+
+              <div class="form-group required">
+                <label class="control-label">Accounting cost center</label><br>
+                    <input type="text" 
+                           class="form-control"  
+                           placeholder="0" 
+                           ng-model="accounting_cost_center" 
+                           ng-change="accountingType(accounting_cost_center)">
+              </div>
+          </form>
+
+                <div class="checkbox">
+                  <label ><input type="checkbox"> Option term payment</label>
+                </div>
+
+                <div class="form-group">
+                   <label for="comment">Description</label>
+                   <textarea class="form-control textareaBox" rows="5" id="comment"></textarea>
+                </div>
+      </div>
+
+      <div class="modal-footer">
+        <form class="form-inline" style = "float:left">
+            <div class="form-group">
+                <span class="fa fa-info-circle footer"></span><br>Information
+            </div>
+            <div class="form-group">
+              <span class="fa fa-calendar-o footer" ></span><br>
+                Parameters
+            </div>
+        </form>
+        <a ui-sref="modal"><button type="button"  
+                                   class="add btn btn-default" 
+                                   data-toggle="modal" 
+                                   data-target="#myModal2" 
+                                   data-dismiss="modal" 
+                                   ng-hide="saveright">
+                                  <i class="fa fa-angle-right" 
+                                     ng-hide="saveright">
+                                  </i>
+                            </button>
+        </a>
+
+        <div ng-show="display">
+          <button type="button" 
+                  class="btn btn-default"  
+                  data-dismiss="modal" 
+                  ng-click="modifyFunct()">Save
+                 
+          </button>
+
+          <a ui-sref="modal"><button type="button"  
+                                     class="add btn btn-default" 
+                                     data-toggle="modal" 
+                                     data-target="#myModal4" 
+                                     ng-click="validate()">
+                                    <i class="fa fa-angle-right"></i> 
+                              </button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
